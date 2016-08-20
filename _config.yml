@@ -1,6 +1,0 @@
-github: [Repository metadata]
-name: LCD Image Converter
-url:              http://lcd-image-converter.riuson.com
-baseurl:          http://lcd-image-converter.riuson.com
-
-exclude: [runserver.bat, runserver.sh]
