@@ -363,12 +363,12 @@ win32 {
     OTHER_FILES += win-res.rc
 }
 
-TRANSLATIONS = resources/lcd-image-converter-ru.ts
+#TRANSLATIONS = resources/lcd-image-converter-ru.ts
+TRANSLATIONS = 
 
 OTHER_FILES += \
     resources/image.tmpl \
     resources/font.tmpl \
-    resources/lcd-image-converter-ru.ts \
     win-res.rc \
     README \
     readme.md \
@@ -416,11 +416,11 @@ QMAKE_EXTRA_TARGETS += version
 PRE_TARGETDEPS += git_revision
 
 # compile translation
-translation_ru.target = $$PWD/resources/lcd-image-converter-ru.qm
-translation_ru.commands = lrelease $$PWD/resources/lcd-image-converter-ru.ts $$PWD/resources/lcd-image-converter-ru.qm
+#translation_ru.target = $$PWD/resources/lcd-image-converter-ru.qm
+#translation_ru.commands = lrelease $$PWD/resources/lcd-image-converter-ru.ts $$PWD/resources/lcd-image-converter-ru.qm
 
 QMAKE_EXTRA_TARGETS += translation_ru
-PRE_TARGETDEPS += $$PWD/resources/lcd-image-converter-ru.qm $$PWD/resources/lcd-image-converter-ru.ts
+#PRE_TARGETDEPS += $$PWD/resources/lcd-image-converter-ru.qm $$PWD/resources/lcd-image-converter-ru.ts
 
 DISTFILES += \
     astyle.astylerc

@@ -1,4 +1,10 @@
 # <img src="resources/icons/lcd-image-converter-64.png"/> LCD Image Converter
+
+## May 2019 Update
+
+The code does work. However, the Russian translations were missing from the original repo. Those russian translation references were removed from
+the qmake file, and the application built correctly on MacOSX (and I assume it will on Linux). See below for how to build on Mac OSX.
+
 [![Travis Build Status](https://img.shields.io/travis/riuson/lcd-image-converter.svg?label=linux)](https://travis-ci.org/riuson/lcd-image-converter)
 [![Coverity Scan](https://img.shields.io/coverity/scan/3997.svg?maxAge=2592000)](https://scan.coverity.com/projects/riuson-lcd-image-converter)
 
@@ -31,7 +37,7 @@ Allows you to create bitmaps and fonts, and transform them to "C" source format 
 - [Source code repository on GitHub](https://github.com/riuson/lcd-image-converter)
 
 ## Contacts and support
- - Author: Vladimir
+ - Original Author: Vladimir
  - Mailto: riuson@gmail.com
  - [GitHub Issues](https://github.com/riuson/lcd-image-converter/issues)
 
@@ -44,6 +50,19 @@ make
 ~~~
 Requires some additional packages.
 Build logs available on [Travis-CI](https://travis-ci.org/riuson/lcd-image-converter).
+
+## How to build on MacOSX Mojave 
+
+Build was tested on Mac OSX 10.14.4
+
+- Install Xcode if you have not already (including the command line utilities)
+- Download and install QT (open source version is fine). QT normally is installed somewhere, however, suggest installing it in /Applications
+- Run qmake (ie. /Applications/Qt/5.11.1/clang_64/bin/qmake - use whatever version you installed)
+- Run make. It should complete without error.
+- Look in release/linux/output for the "app". Copy the "app" folder to /Applications. You can now run it in the usual MacOSX way.
+
+Because this is a linux app, there is now Mac icon for the application and the usual Mac menus aren't there. I may update that in the future, but it doesn't take away from the program.
+
 
 
 
